@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Десислав Павлов</h1>
+    
+    <h2>Живот</h2>
+    <p>*описание на моят живот*</p>
+
+    <h3>Семейство</h3>
+    <!-- Carousel откраднат от Bootstrap със снимки и имена на семейството -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h3>Интереси</h3>
+      <!-- Card компоненти, не задължително с помощта на Bootstrap, но с такава идея -->
+      <div class="card">
+        <img src="" alt=""> 
+        <div class="card-body">Описание на интерес 1</div>
+        <div class="card-footer"><button>Бутон за подстраница в блога, свързана с този интерес</button></div>
+      </div>
+      <div class="card">
+        <img src="" alt=""> 
+        <div class="card-body">Описание на интерес 2</div>
+        <div class="card-footer"><button>Бутон за подстраница в блога, свързана с този интерес</button></div>
+      </div>
+      <div class="card">
+        <img src="" alt=""> 
+        <div class="card-body">Описание на интерес 3</div>
+        <div class="card-footer"><button>Бутон за подстраница в блога, свързана с този интерес</button></div>
+      </div>
+
+      <h3>Образувание</h3>
+      <!-- Текст, в който има линк към сайта на училището и Carousel с негови снимки -->
+      <p>Текст свързан с моето образувание и <a href="">училище</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet eleifend purus. Aliquam dictum hendrerit lacus sit amet malesuada. Maecenas tempus in turpis sit amet ullamcorper. Sed fringilla elementum fermentum. Curabitur vitae nisl sed mauris tincidunt aliquet id sit amet diam.</p>
+      <div id="carousel2"><img src="" alt=""></div>
+
+      <h3>Цели и постижения</h3>
+      <!-- Collapsable бутони, които закриват и разкриват абзаци -->
+      <button class="collapse">Постижение 1</button>
+      <button class="collapse">Постижение 2</button>
+      <button class="collapse">Постижение 3</button>
+
+      <div class="collapsable"><p>Постижение 1 абзац</p></div>
+      <div class="collapsable"><p>Постижение 2 абзац</p></div>
+      <div class="collapsable"><p>Постижение 3 абзац</p></div>
+
+
+      <button class="collapse">Цел 1</button>
+      <button class="collapse">Цел 2</button>
+      <button class="collapse">Цел 3</button>
+      
+      <div class="collapsable"><p>Цел 1 абзац</p></div>
+      <div class="collapsable"><p>Цел 2 абзац</p></div>
+      <div class="collapsable"><p>Цел 3 абзац</p></div>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
