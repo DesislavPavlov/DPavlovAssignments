@@ -1,0 +1,13 @@
+{
+    "name": "Learn A Word!",
+    "version": "1.0.0",
+    "description": "Have you ever encountered an unknown word and wanted to learn what it means? Usually you have to look it up in a dictionary, but now you can do it with a few clicks using this extension.",
+    "icon": "./images/dict.png",
+    "manifest_version": 3,
+    "author": "Desislav Pavlov",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Learn A Word!",
+        "default_icon": "./images/dict.png"
+    }
+}
