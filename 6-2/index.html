@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy</title>
+</head>
+<body style="margin: 0; background-color: black;">
+    <canvas id="myCanvas"></canvas>
+</body>
+
+<script>
+    const canvas = document.getElementById("myCanvas");
+    canvas.style = `width: ${window.innerWidth}px; height: ${window.innerHeight - 4}px`;
+    let ctx = canvas.getContext("2d");
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+    
+    run();
+    
+
+
+    
+
+    async function getImg() {
+        return new Promise((resolve) =>{
+            let img = new Image();
+            img.src = "./image/star.png";
+            img.onload = () => {resolve(img)}; 
+        });
+        
+    }
+
+    async function run() {
+        const starImg = await getImg();
+
+        for(let rows = 0; rows < window.innerHeight / 5; rows++) {
+            for(let cols = 0; cols < 10; cols++) {
+            let rndCol = Math.floor(Math.random() * window.innerWidth);
+            let rndWidth = Math.floor(Math.random() * 25 - 12);
+            let rndHeight = Math.floor(Math.random() * 25 - 12);
+            ctx.drawImage(starImg, rndCol, rows, rndWidth, rndHeight);
+            }
+        }
+    }
+</script>
+</html>
